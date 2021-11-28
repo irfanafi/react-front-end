@@ -1,0 +1,14 @@
+.main-widget-div{
+    display: flex;
+    width: 100%;
+}
+
+.widget-left{
+    display: inline-block;
+    text-align: left;
+}
+
+.widget-right{
+    flex-grow: 1;
+    text-align: left;
+}

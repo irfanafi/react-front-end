@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    width: 100%;
+  }
+  
+  header {
+    background-color: white;
+    padding-bottom: 5px;
+    overflow: hidden;
+    border-bottom: teal solid 2px;
+  }
+  
+  .left-header {
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  
+  .left-header * {
+    display: inline;
+    margin: 0%;
+    float: left;
+  }
+  
+  .left-header img {
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+  }
+  
+  .left-header h2 {
+    margin-top: 40px;
+  }
+  
+  .header-buttons {
+    float: right;
+  }
+  
+  header .header-buttons {
+    margin-top: 30px;
+  }
+  
+  header .header-buttons * {
+    margin-right: 20px;
+  }
+  
+  header .header-buttons i {
+    margin-right: 10px;
+  }
+  
+  header .header-buttons a {
+    text-decoration: none;
+    border: black solid 1px;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  
+  .header-right-side {
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .navigation-bar {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    margin: 10px 40px;
+    padding: 0%;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 35px;
+  }
+  
+  nav li:last-child {
+    margin-right: 70px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+  }
+  
+  .clearfix{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /********* Footer **************/
+  
+  footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    padding: 0px 60px;
+    padding-top: 10px;
+    bottom: 0;
+  }
+  
+  footer .footer-icons {
+    float: left;
+  }
+  footer .footer-icons i {
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  footer .copyright {
+    color: white;
+    text-align: center;
+  }
+
+  /********* End of footer **************/
+
+.signup-section{
+
+    height: 80vh;
+}
+
+.signup-container{
+
+    height: 100%;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+
+}
+
+.signup-title{
+    margin-bottom: 10px;
+}
+
+.signup-title p{
+    margin-top: 5px;
+}
+
+.sign-up-form{
+
+    border: black solid 2px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(198, 199, 199);
+}
+
+form{
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+form input, form select{
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form label{
+    font-size: 0.8em;
+}
+
+.username input {
+	margin-bottom:10px;
+	width: 100%;
+}
+
+.full-name{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.full-name input{
+    display: inline-block;
+    width: 49%;
+}
+
+.email input, .password input, .confirm-password input{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.date-of-birth{
+    margin-top: 15px;
+}
+
+.date-picker select{
+    width: 32.3%;
+}
+
+.gender{
+    margin-top: 10px;
+}
+
+.gender-selection div{
+    margin-top: 5px;
+    display: inline-block;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 49%;
+    height: 36px;
+    position: relative;
+}
+
+.gender-selection div label{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1em;
+    
+}
+
+.gender-selection div input{
+    position: absolute;
+    right: 10px;
+}
+
+.terms{
+    margin: 10px 0;
+    width: 100%;
+}
+form p{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sign-up-button{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.sign-up-button input{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+

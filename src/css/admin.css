@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Cormorant", serif;
+}
+
+.left-col {
+  float: left;
+  width: 15%;
+  height: 100vh;
+  background-color: white;
+  padding-top: 80px;
+}
+
+.right-col {
+  float: left;
+  height: 100vh;
+  width: 85%;
+  background-color: #f3ebf6;
+  padding: 15px 0;
+}
+
+.dashboard-row {
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.dashboard-row:hover {
+  background-color: #f3ebf6;
+}
+
+.dashboard-row a {
+  text-decoration: none;
+}
+
+.table-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+table {
+  width: 80%;
+  padding: 10px 0;
+}
+
+table * {
+  text-align: center;
+}
+
+td form {
+  display: inline-block !important;
+}
+
+.nav-link {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Cormorant", serif;
+}
+
+.search {
+  height: 40px;
+  width: 80%;
+  border-radius: 60px;
+  outline: none;
+  margin-right: -35px;
+  border: 2px solid rgb(170, 201, 167);
+  font-family: "Cormorant", serif;
+}
+
+btn btn-success,
+btn btn-danger {
+  display: inline-block;
+}

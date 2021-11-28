@@ -1,0 +1,6 @@
+.pageDirContainer{
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}

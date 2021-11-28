@@ -1,0 +1,50 @@
+.sender{
+     border: solid 1px black;
+     border-radius: 25px;
+     padding: 20px 20px;
+     width: 100%;
+}
+
+.sender-details-table{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+}
+
+.sender-header{
+    text-align: left;
+    padding: 10px 0;
+}
+
+.sender-header label{
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.col-md-4{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.icon-div{
+    padding: 0px 12px;
+}
+
+.input-div{
+    flex-grow: 100;
+}

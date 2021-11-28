@@ -1,0 +1,68 @@
+.import-page-div{
+    border: 0.2rem solid black;
+}
+
+.p-div{
+    margin-left: 0;
+}
+
+.p-div p{
+    text-align: left;
+}
+
+.drop-zone{
+    border-style: dotted;
+    height: 250px;
+}
+
+.modal-footer-self{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1.6rem;
+    border-top: 0.1rem solid rgba(225, 227, 229, 1);
+}
+
+.help-div{
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+    max-width: 100%;
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.help-div a{
+    display: block;
+    text-align: left;
+}
+
+.footer-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -0.8rem;
+    margin-left: -0.8rem;
+    flex: 0 0 auto;
+}
+
+.footer-buttons *{
+    min-height: 10px;
+    min-width: 10px;
+    padding: 10px 10px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+.cancel-button-div{
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.submit-button-div{
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+}

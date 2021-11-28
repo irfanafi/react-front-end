@@ -1,25 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Login from './components/Login';
+import Admin from './components/Admin';
+import Register from './components/Register';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      loginPage: false,
+      adminPage: false,
+      registrationPage: true,
+      parcelPage: false,
+      historyPage: false
+    };
+    this.changePages = this.changePages.bind(this);
+  };
+
+  changePages = (context) => {
+    this.setState({
+        loginPage: false,
+        adminPage: true
+    })
+}
+
+  render(){
+    return (
+      <div className="Logistic App">
+        { this.state.loginPage && <Login onPageChange={this.changePages} />}
+        { this.state.adminPage && <Admin />}
+        { this.state.registrationPage && <Admin onPageChange={this.changePages}/>}
+      </div>
+    );
+  }
+  
 }
 
 export default App;

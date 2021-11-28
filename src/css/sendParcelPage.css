@@ -1,0 +1,19 @@
+#sendParcelContainer{
+    display: flex;
+}
+
+#left-side{
+    width:66%;
+}
+
+#right-side{
+    width:33%;
+}
+
+#addOptionsContainer{
+    display: inline-block;
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
