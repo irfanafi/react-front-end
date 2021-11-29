@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import {Navigation} from 'react-minimal-side-navigation';
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
+import "../../css/sidepanel.css"
 
 class SidePanel extends React.Component{
     render(){
@@ -27,11 +28,11 @@ class SidePanel extends React.Component{
                             itemId: '/management',
                             subNav: [
                             {
-                                title: 'Single Parcel',
+                                title: 'Single-Parcel',
                                 itemId: '/management/projects',
                             },
                             {
-                                title: 'Import Parcels',
+                                title: 'Import-Parcels',
                                 itemId: '/management/members',
                             },
                             ],

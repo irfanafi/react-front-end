@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import ImportPage from './Import Parcel/ImportPage';
+import ShoppingCartStatus from './Import Parcel/ShoppingCartStatus';
 import SendParcelPage from './Import Parcel/Send Parcel/SendParcelPage';
 import PageDirectory from './Page Directory/PageDirectory';
 import ParcelStatusPage from './Parcel Status/ParcelStatusPage';
@@ -29,6 +30,7 @@ class AdminBody extends React.Component{
                 < PageDirectory />
                 {/* < ParcelStatusPage /> */}
                 <ImportPage />
+                {/* <ShoppingCartStatus /> */}
                 {/* <SendParcelPage /> */}
             </div>
         )
