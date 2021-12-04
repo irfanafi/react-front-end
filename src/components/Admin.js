@@ -7,14 +7,17 @@ import SidePanel from './Admin/SidePanel';
 import '../css/mainAdmin.css'
 import ImportPage from './Admin/Import Parcel/ImportPage';
 import SendParcelPage from './Admin/Import Parcel/Send Parcel/SendParcelPage';
-
+import { BrowserRouter as Router, Switch, Route, Routes , useRouteMatch} from 'react-router-dom';
 
 class Admin extends React.Component{
+    
     render(){
         return(
             <div>
                 <div class="header-row">
-                    <HeaderRow />
+                    <Routes>
+                        <Route path="/*" element={ <HeaderRow /> } />
+                    </Routes>
                 </div>
                 <div class="clearfix"></div>
                 <div class="admin-container">
@@ -23,13 +26,11 @@ class Admin extends React.Component{
                         <SidePanel />
                     </div>
                     <div class="flex-item">
-                        <AdminBody />
+                        <Routes>
+                            <Route path="/*" element={ <AdminBody/> } />
+                        </Routes>
                     </div>
                 </div>
-
-                
-                
-               
             </div>
         )
     }

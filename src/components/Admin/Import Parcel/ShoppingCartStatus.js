@@ -30,8 +30,8 @@ class ShoppingCartStatus extends React.Component{
                             < ImportParcelStatusRow /> 
                         </tbody>
                     </table>
-                    <button>Cancel</button>
-                    <button>Pay Now</button>
+                    <button class="cart-buttons">Cancel</button>
+                    <button class="cart-buttons">Pay Now</button>
                 </div>
                 
                               

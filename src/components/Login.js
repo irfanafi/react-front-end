@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import '../css/login.css'
+// import '../css/login.css'
 
 class Login extends React.Component{
     constructor(props){

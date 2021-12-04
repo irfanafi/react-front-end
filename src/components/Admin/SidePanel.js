@@ -1,63 +1,39 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import {Navigation} from 'react-minimal-side-navigation';
-import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
-import "../../css/sidepanel.css"
+import { Sidenav, Nav, Dropdown } from 'rsuite';
+import 'rsuite/dist/rsuite.css';
 
 class SidePanel extends React.Component{
     render(){
         return(
-            <div class="side-panel">
-                <Navigation
-                        // you can use your own router's api to get pathname
-                        activeItemId="/management/members"
-                        onSelect={({itemId}) => {
-                        // maybe push to the route
-                        }}
-                        items={[
-                        {
-                            title: 'Dashboard',
-                            itemId: '/dashboard',
-                        },
-                        {
-                            title: 'Account',
-                            itemId: '/dashboard',
-                        },
-                        {
-                            title: 'Send Parcels',
-                            itemId: '/management',
-                            subNav: [
-                            {
-                                title: 'Single-Parcel',
-                                itemId: '/management/projects',
-                            },
-                            {
-                                title: 'Import-Parcels',
-                                itemId: '/management/members',
-                            },
-                            ],
-                        },
-                        {
-                            title: 'Top Up Account',
-                            itemId: '/dashboard',
-                        },
-                        {
-                            title: 'Link a friend',
-                            itemId: '/dashboard',
-                        },
-                        {
-                            title: 'Settings',
-                            itemId: '/another',
-                            subNav: [
-                            {
-                                title: 'Teams',
-                                itemId: '/management/teams',
-                            },
-                            ],
-                        },
-                        ]}
-                    />
-        </div>         
+            <div >
+                <Sidenav >
+                <Sidenav.Body>
+                    <Nav>
+                    <Nav.Item eventKey="1">
+                        Dashboard
+                    </Nav.Item>
+                    <Nav.Item eventKey="2">
+                        Account
+                    </Nav.Item>
+                    <Dropdown eventKey="3" title="Send Parcels">
+                        <Dropdown.Item eventKey="3-1" href="/home/sendParcel">Single Parcel</Dropdown.Item>
+                        <Dropdown.Item eventKey="3-2" href="/home/importParcels">Import Parcels</Dropdown.Item>
+                    </Dropdown>
+                    <Nav.Item eventKey="4">
+                        Top Up Account
+                    </Nav.Item>
+                    <Nav.Item eventKey="5">
+                        Refer a friend
+                    </Nav.Item>
+                    <Nav.Item eventKey="6">
+                        Settings
+                    </Nav.Item>
+                    </Nav>
+                </Sidenav.Body>
+                </Sidenav>
+            </div>       
         )
     }
 }
